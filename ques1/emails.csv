@@ -1,0 +1,5 @@
+Email,PromotionalWords,SuspiciousLinks,KnownSender,AllCaps,Class
+E1,Yes,Yes,No,Yes,Spam
+E2,Yes,No,No,Yes,Spam
+E3,No,No,Yes,No,Not Spam
+E4,No,Yes,Yes,No,Not Spam

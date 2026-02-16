@@ -1,0 +1,7 @@
+Customer,Income,CreditScore,Default
+C1,2.5,580,Yes
+C2,3.0,600,Yes
+C3,3.5,650,No
+C4,4.0,700,No
+C5,4.5,720,No
+C6,5.0,750,No

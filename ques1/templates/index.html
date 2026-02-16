@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Email Classifier</title>
+</head>
+<body>
+<center>
+<h2>Spam Email Classifier</h2>
+
+<form method="POST">
+
+Promotional Words:
+<select name="promo">
+<option value="Yes" {% if promo=="Yes" %}selected{% endif %}>Yes</option>
+<option value="No" {% if promo=="No" %}selected{% endif %}>No</option>
+</select>
+
+Suspicious Links:
+<select name="links">
+<option value="Yes" {% if links=="Yes" %}selected{% endif %}>Yes</option>
+<option value="No" {% if links=="No" %}selected{% endif %}>No</option>
+</select>   
+
+
+Known Sender:
+<select name="sender">
+<option value="Yes" {% if sender=="Yes" %}selected{% endif %}>Yes</option>
+<option value="No" {% if sender=="No" %}selected{% endif %}>No</option>
+</select>
+
+All Caps:
+<select name="caps">
+<option value="Yes" {% if caps=="Yes" %}selected{% endif %}>Yes</option>
+<option value="No" {% if caps=="No" %}selected{% endif %}>No</option>
+</select>
+
+<button type="submit">Predict</button>
+
+</form>
+
+{% if result %}
+<h3>Result: {{ result }}</h3>
+{% endif %}
+</center>
+</body>
+</html>
