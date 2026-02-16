@@ -135,7 +135,4 @@ This assignment provides hands-on experience with foundational machine learning 
 
 ---
 
-## Author
 
-Mathi
-B.Tech CSBS — Machine Learning Assignment
