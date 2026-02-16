@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buy Computer Prediction</title>
+</head>
+<body>
+
+<h2>ID3 Decision Tree — Buy Computer</h2>
+
+<form method="POST">
+
+Age:
+<select name="age">
+<option value="<=30"><=30</option>
+<option value="31-40">31-40</option>
+<option value=">40">>40</option>
+</select><br><br>
+
+Income:
+<select name="income">
+<option value="high">High</option>
+<option value="medium">Medium</option>
+<option value="low">Low</option>
+</select><br><br>
+
+Student:
+<select name="student">
+<option value="yes">Yes</option>
+<option value="no">No</option>
+</select><br><br>
+
+Credit Rating:
+<select name="credit">
+<option value="fair">Fair</option>
+<option value="excellent">Excellent</option>
+</select><br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+{% if result %}
+<h3>Buys Computer: {{ result }}</h3>
+{% endif %}
+
+</body>
+</html>

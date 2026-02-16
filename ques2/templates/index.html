@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loan Default Predictor</title>
+</head>
+<body>
+    <center>
+
+<h2>Loan Default Prediction</h2>
+
+<form method="POST">
+Annual Income (Lakhs):
+<input type="number" step="0.1" name="income" required>
+<button type="submit">Predict</button>
+</form>
+
+{% if result is not none %}
+<h3>Will Default: {{ result }}</h3>
+{% endif %}
+
+<h4>Best Split Threshold: {{ threshold }}</h4>
+<h4>Information Gain: {{ gain }}</h4>
+    </center>
+</body>
+</html>
